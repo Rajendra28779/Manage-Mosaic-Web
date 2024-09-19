@@ -2216,3 +2216,16 @@ responsive
     padding: 30px;
   }
 }
+
+.responsive-image {
+  margin-left: 80px;
+  margin-top: -40px;
+}
+
+/* Adjustments for mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .responsive-image {
+    margin-left: 0px; /* Reset margin for smaller screens */
+    margin-top: 0px;  /* Adjust this for your mobile layout */
+  }
+}
