@@ -75,6 +75,60 @@ figure, header, nav, section, article, aside, footer, figcaption {
   height: 0;
 }
 
+.contain {
+  margin-left: 15ch;
+  margin-right: 1ch;
+}
+
+/* Hide the Login text initially */
+.login-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  transition: width 0.4s ease;
+  font-weight: bold;
+  margin-left: 3px;
+  /* margin-top: 1ch; */
+  font-size: 23px;
+}
+
+.mainname {
+  font-family: 'Raleway', sans-serif;
+}
+
+.passage {
+  text-align: justify;
+  
+}
+
+.login-icon {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* For the icon to become bold and show text on hover */
+.login-icon:hover i {
+  font-weight: bold; /* Makes the icon bold */
+}
+
+.login-icon:hover .login-text {
+  width: 60px;  /* Slide the text to the right */
+}
+
+.login-container {
+  margin-top: 3ch;
+   text-align: end;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    display: none;
+  }
+}
+
 .clearfix {
   display: inline-block;
 }
@@ -377,28 +431,27 @@ header
 }
 
 .header-area .main-nav .nav li {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header-area .main-nav .nav li:nth-child(6) {
   padding-right: 0px;
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 .header-area .main-nav .nav li:last-child a ,
 .background-header .main-nav .nav li:last-child a,
 .header-area .main-nav .nav li:nth-child(6) a ,
 .background-header .main-nav .nav li:nth-child(6) a {
-  padding: 0px 20px !important;
-  font-weight: 400;
+  padding: 0px 0px !important;
 }
 
 .header-area .main-nav .nav li:last-child a:hover ,
 .background-header .main-nav .nav li:last-child a:hover,
 .header-area .main-nav .nav li:nth-child(6) a:hover ,
 .background-header .main-nav .nav li:nth-child(6) a:hover {
-  color: #fff !important;
+  color: #4b8ef1 !important;
 }
 
 .header-area .main-nav .nav li a {
@@ -511,7 +564,7 @@ header
   display: block;
   position: absolute;
   top: 33px;
-  width: 32px;
+  width: 40px;
   height: 40px;
   text-indent: -9999em;
   z-index: 99;
@@ -674,7 +727,7 @@ header
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
-    width: 100%;
+    width: 10%;
   }
   .header-area {
     background-color: #fff;
@@ -1566,7 +1619,7 @@ footer {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 130px;
+  /* margin-top: 130px; */
   padding-top: 300px;
   padding-bottom: 60px;
 }
