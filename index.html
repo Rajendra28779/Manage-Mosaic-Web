@@ -26,8 +26,7 @@ https://templatemo.com/tm-570-chain-app-dev
 -->
 
   <!-- Additional CSS Files -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
   <link rel="stylesheet" href="assets/css/animated.css">
   <link rel="stylesheet" href="assets/css/owl.css">
@@ -128,6 +127,15 @@ https://templatemo.com/tm-570-chain-app-dev
     <a href="" target="_blank">
         <img src="assets/images/download-app-apple.png" alt="App Store">
     </a>
+  </div>
+
+  <div class="scrolling-container container">
+    <span class="static-text">
+      <i class="fas fa-file-alt"></i> What's New
+    </span>
+    <div class="scrolling-text">
+      <p>This is a scrolling text field that moves continuously across the screen with new updates.</p>
+    </div>
   </div>
 
   <div id="services" class="services section">
@@ -308,15 +316,18 @@ https://templatemo.com/tm-570-chain-app-dev
           <div class="footer-widget">
             <h4>About Us</h4>
             <ul>
-              <li><a href="#top">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#">Vision</a></li>
-              <li><a href="#">Users</a></li>              
+              <li><a href="#top">Home</a></li>              
+              <li><a class="open-modal" data-modal="visionModal">Vision</a></li>
+              <li><a class="open-modal" data-modal="usersModal">Users</a></li>
+              <li><a class="open-modal" data-modal="copyrightModal">Copyright Policy</a></li>        
+              <li><a class="open-modal" data-modal="privacyModal">Privacy Policy</a></li>              
+              <li><a class="open-modal" data-modal="termsModal">Terms & Conditions</a></li>       
+                            
             </ul>
             <ul>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Feed back</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a class="open-modal" data-modal="contactModal">Contact</a></li>
+              <li><a class="open-modal" data-modal="feedbackModal">Feedback</a></li>
             </ul>
           </div>
         </div>
@@ -356,7 +367,8 @@ https://templatemo.com/tm-570-chain-app-dev
               <img src="assets/images/white-m2-logo.png" alt="">
             </div>
             <div class="download-app">
-              <img src="assets/images/download-app.png" alt="">
+              <img src="assets/images/download-app-apple.png" alt="">
+              <img src="assets/images/download-app-google.png" alt="">
             </div>            
             <p class="passage">Manage Mosaic ensures stress-free management with 24/7 support, so you can focus on enjoying life.</p>
           </div>
@@ -370,8 +382,232 @@ https://templatemo.com/tm-570-chain-app-dev
     </div>
   </footer>
 
+  <!-- --------------------------modal------------------------------------------ -->
+  <div class="modal" id="visionModal">
+    <div class="modal-content">        
+      <div class="row">
+        <div class="col-md-11"><h4>AboutUs/Vision</h4></div>
+        <div class="col-md-1"><span class="close">&times;</span></div>
+      </div><hr style="width: 100%;  height: 4px; background-color: #1f723f;">
+      <p>Our vision is to empower users to lead more fulfilling lives by providing a comprehensive mobile app that simplifies the
+        management of daily tasks. By integrating tools for rental management, trip planning, and event organization into a single
+        platform, Manage Mosaic aims to reduce stress and enhance enjoyment. The app encourages users to stay organized, freeing 
+        up time to focus on what truly matters, ultimately promoting a balanced and enriched lifestyle. Through this holistic approach,
+        Manage Mosaic aspires to be an essential companion for navigating the complexities of modern life.</p>
+        <div class="footer">Manage Mosaic</div>
+    </div>
+  </div>
+
+<div class="modal" id="usersModal">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-md-11"><h4>AboutUs/Users</h4></div>
+        <div class="col-md-1"><span class="close">&times;</span></div>
+      </div>
+      <hr style="width: 100%;  height: 4px; background-color: #1f723f;">
+      <div class="row container">
+        <div class="col-lg-4 col-md-4 col-6  text-center">
+          <i class="fas fa-users aboutuser-icon"></i>
+          <h3>10,000 +</h3>
+          <p class="text-center">Users</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6  text-center">
+          <i class="fas fa-home aboutuser-icon"></i>
+          <h3>1,200 +</h3>
+          <p class="text-center">Landlords</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 text-center">
+          <i class="fas fa-user-friends aboutuser-icon"></i>
+          <h3>2,500 +</h3>
+          <p class="text-center">Tenants</p>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-6  text-center">
+          <i class="fas fa-calendar-alt aboutuser-icon"></i>
+          <h3>350 +</h3>
+          <p class="text-center">Organizers</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6  text-center">
+          <i class="fas  fa-briefcase aboutuser-icon"></i>
+          <h3>150 +</h3>
+          <p class="text-center">Event Managers</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 text-center">
+          <i class="fas fa-user-friends aboutuser-icon"></i>
+          <h3>1,000 +</h3>
+          <p class="text-center">supportive staff</p>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-6  text-center">
+          <i class="fa-solid fa-download aboutuser-icon"></i>
+          <h3>10,000 +</h3>
+          <p class="text-center">Downloads</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6  text-center">
+          <i class="fa-solid fa-star-half-stroke aboutuser-icon"></i>
+          <h3>4.5</h3>
+          <p class="text-center">Rating</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 text-center">
+          <i class="fas  fa-city aboutuser-icon"></i>
+          <h3>100 +</h3>
+          <p class="text-center">Cities</p>
+        </div>
+      </div>      
+        <div class="footer">Manage Mosaic</div>
+    </div>
+</div>
+
+<div class="modal" id="copyrightModal">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-md-11"><h4>AboutUs/Copyright Policy</h4></div>
+        <div class="col-md-1"><span class="close">&times;</span></div>
+      </div><hr style="width: 100%;  height: 4px; background-color: #1f723f;">
+        <p>Material on this site is subject to copyright protection unless otherwise indicated.
+          The material may be downloaded to file or printer without requiring specific prior permission.
+          Any other proposed use of the material is subject to the approval of <b>MANAGE MOSAIC</b>. Application for obtaining permission should be made to <b>managemosaic@gmail.com.</b></p>
+        <div class="footer">Manage Mosaic</div>
+    </div>
+</div>
+
+<div class="modal" id="privacyModal">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-md-11"><h4>AboutUs/Privacy Policy</h4></div>
+        <div class="col-md-1"><span class="close">&times;</span></div>
+      </div><hr style="width: 100%;  height: 4px; background-color: #1f723f;">
+        <p>Thanks for visiting <b>MANAGE MOSAIC</b>, and reviewing our privacy policy. We collect no personal information,
+          like names or addresses, when you visit our website. If you choose to provide that information to us, 
+          it is only used to fulfil your request for information. We do collect some technical information when you visit
+          to make your visit seamless. The section below explains how we handle and collect technical information when
+          you visit our website. Information collected and stored automatically: When you browse, read pages, or download
+          information on this website, we automatically gather and store certain technical information about your visit.
+          This information never identifies who you are. The information we collect and store about your visit is listed below:</p>
+          <br>
+        <p>Cookies: When you visit some websites, they may download small pieces of software on your computer/browsing
+          device known as cookies. Some cookies collect personal information to recognise your computer in the future.
+          We only use non-persistent cookies or “per-session cookies”.</p>
+        <div class="footer">Manage Mosaic</div>
+    </div>
+</div>
+
+<div class="modal" id="termsModal">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-md-11"><h4>AboutUs/Terms & Conditions</h4></div>
+        <div class="col-md-1"><span class="close">&times;</span></div>
+      </div><hr style="width: 100%;  height: 4px; background-color: #1f723f;">
+        <h6>Last Updated: [21-Sep-2024]</h6>
+        <p>Welcome to Manage Mosaic! you agree to these Terms and Conditions.
+          If you do not agree, please do not use the app.</p>
+        <h6>Acceptance of Terms</h6>
+        <p>By accessing or using Manage Mosaic, you acknowledge that you have read,
+          understood, and agree to be bound by these Terms and Conditions.</p>
+        <h6>User Accounts</h6>
+        <p>Users must create an account to access certain features.</p>
+        <p>You are responsible for maintaining the confidentiality of your account information
+          and for all activities that occur under your account.</p>
+        <h6>Use of the App</h6>
+        <p>Manage Mosaic is designed to help users manage various aspects of their lives.</p>
+        <p>You agree to use the app only for lawful purposes and in accordance with these Terms.</p>
+        <h6>User Content</h6>
+        <p>Users may submit, post, or display content through the app.</p>
+        <p>By submitting content, you grant Manage Mosaic a non-exclusive, royalty-free,
+          perpetual license to use, reproduce, modify, and publish your content.</p>
+        <h6>Termination</h6>
+        <p>We reserve the right to suspend or terminate your access to Manage Mosaic if you violate these
+          Terms or engage in any conduct that we deem harmful to the app or other users.</p>
+        <h6>Changes to Terms</h6>
+        <p>We may update these Terms and Conditions from time to time. We will notify you of any changes by 
+          posting the new Terms on this page. Your continued use of the app after changes constitutes acceptance 
+          of the new Terms.</p>
+        <h6>Contact Us</h6>
+        <p>If you have any questions about these Terms, please contact us at <b>[AboutUs/Contact]</b>.</p>
+        <div class="footer">Manage Mosaic</div>
+    </div>
+</div>
+
+<div class="modal" id="contactModal">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-11"><h4>AboutUs/Contact</h4></div>
+        <div class="col-1"><span class="close">&times;</span></div>
+      </div><hr style="width: 100%;  height: 4px; background-color: #1f723f;">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-12">
+          <h5>Contact Number</h5>
+          <p>6370178554</p>
+          <hr style="width: 100%;">
+          <h5>Mail</h5>
+          <p>managemosaic@gmail.com</p>
+          <hr style="width: 100%;">
+          <h5>Location</h5>
+          <p>Bhubaneswar ,Odisha, 752115, India</p>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119770.0561864422!2d85.85555315594189!3d20.266536716773356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a1d7ca64e279%3A0xdc0c6b942fd57bcf!2sThanapati%20store!5e0!3m2!1sen!2sin!4v1726934940947!5m2!1sen!2sin"
+           width="320" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+        <div class="footer">Manage Mosaic</div>
+    </div>
+</div>
+
+<div class="modal" id="feedbackModal">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-md-11"><h4>AboutUs/Feedback</h4></div>
+        <div class="col-md-1"><span class="close">&times;</span></div>
+      </div><hr style="width: 100%;  height: 4px; background-color: #1f723f;">
+      <div >
+        <label for="EnterFullName" class="form-label">Full Name<span class="text-danger">*</span></label>
+        <input class="form-control" type="text" placeholder="Enter Full Name"autocomplete="off" id="fullname" maxlength="40">
+      </div>
+      <div >
+        <label for="EnterEmailID" class="form-label">Email ID<span class="text-danger">*</span></label>
+        <input class="form-control" type="text" placeholder="Enter Email ID" id="email" autocomplete="off" maxlength="60">
+      </div>
+      <div >
+        <label for="User Address" class="control-label">Feedback<span class="text-danger">*</span></label>
+        <div style="height: 6pt;"></div>
+        <textarea class="form-control"  placeholder="Enter Feedback"autocomplete="off" id="address" maxlength="100" style="height: 75pt;"></textarea>
+      </div>
+      <div class="row">
+        <div class="col-md-6"><button class="submit-button">Submit Feedback</button></div>
+        <div class="col-md-6 footer">Manage Mosaic</div>
+      </div>
+    </div>
+</div>
+
+  <!-- --------------------------modal------------------------------------------ -->
+
 
   <!-- Scripts -->
+  <script>
+    // Open modal functionality
+    document.querySelectorAll('.open-modal').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const modalId = this.getAttribute('data-modal');
+            document.getElementById(modalId).style.display = 'block';
+        });
+    });
+
+    // Close modal functionality
+    document.querySelectorAll('.close').forEach(span => {
+        span.addEventListener('click', function() {
+            this.closest('.modal').style.display = 'none';
+        });
+    });
+
+    // Close modal when clicking outside of modal content
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = 'none';
+        }
+    };
+</script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
@@ -379,6 +615,7 @@ https://templatemo.com/tm-570-chain-app-dev
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>  
+
 </body>
 
 </html>
