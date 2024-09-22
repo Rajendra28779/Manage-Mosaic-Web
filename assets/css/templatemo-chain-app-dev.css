@@ -75,6 +75,14 @@ figure, header, nav, section, article, aside, footer, figcaption {
   height: 0;
 }
 
+.background {
+  background-image: url('../images/bg-lg-blor.jpg');
+  background-color: #4b8ef1; /* Sky blue color with transparency */
+  background-blend-mode: overlay;
+  height: 100vh; /* Adjust as needed */
+  width: 100%;
+}
+
 .contain {
   margin-left: 12ch;
   margin-right: 1ch;
@@ -128,6 +136,91 @@ figure, header, nav, section, article, aside, footer, figcaption {
     display: none;
   }
 }
+
+/* ------------------------------slide image--------------------- */
+ /* Full-screen container */
+ .slider-container {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjusted height */
+  background-color: rgb(194, 191, 191);
+  background-image: url('../images/bg-lg.jpg'); /* Replace with your image path */
+  /* border-radius: 5ch; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1ch;
+  margin-bottom: 5ch;
+}
+
+/* Each slide */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+/* Image inside each slide */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 5ch; */
+}
+
+/* Show the first slide */
+.slide.active {
+  display: block;
+}
+
+/* Navigation buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px;
+  user-select: none;
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+/* Add some hover effect */
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 25vh; /* Adjusted height */
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1ch;
+    margin-bottom: 3ch;
+  }
+
+}
+
+/* ------------------------------slide image--------------------- */
 
 .clearfix {
   display: inline-block;
@@ -1005,7 +1098,7 @@ Services Style
 */
 
 .services {
-  padding-top: 130px;
+  padding-top: 50px;
   position: relative;
 }
 
@@ -1141,7 +1234,7 @@ About Us
 */
 
 .about-us {
-  padding-top: 130px;
+  padding-top: 80px;
   position: relative;
 }
 
@@ -2604,6 +2697,8 @@ responsive
 /* Mobile optimization */
 @media (max-width: 768px) {
   .scrolling-container{
+    display: flex;
+  align-items: center;
     width: 92%;
     margin-left: 1ch;
     margin-right: 1ch;
@@ -2615,5 +2710,9 @@ responsive
   }
 
 }
+
+
+
+
 
 /* schrolling */
