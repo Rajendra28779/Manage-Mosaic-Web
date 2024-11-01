@@ -107,7 +107,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
 
 .passage {
   text-align: justify;
-  
+  margin-top: 1ch;
 }
 
 .login-icon {
@@ -141,15 +141,15 @@ figure, header, nav, section, article, aside, footer, figcaption {
  /* Full-screen container */
  .slider-container {
   background-color: rgb(194, 191, 191);
-  background-image: url('../images/img-bg.jpg'); /* Replace with your image path */
+  background-image: url('../images/pexels-nubikini-386009.jpg'); /* Replace with your image path */
   position: relative;
   width: 100%;
-  height: 500px; /* Adjusted height */  
+  height: 300px; /* Adjusted height */  
   /* border-radius: 5ch; */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1ch;
+  /* margin-top: -15ch; */
   margin-bottom: 5ch;
 }
 
@@ -159,7 +159,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 300px;
   display: none;
 }
 
@@ -271,10 +271,10 @@ ul {
 }
 
 p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 30px;
   font-weight: 300;
-  color: #afafaf;
+  color: #5f5858;
 }
 
 img {
@@ -804,6 +804,9 @@ header
 }
 
 @media (max-width: 767px) {
+  .main-banner .left-content {
+    margin-top: -7ch;
+  }
   .pre-header ul.info li:last-child,
   .pre-header ul.info li:nth-child(6) {
     display: none!important;
@@ -1051,6 +1054,7 @@ Banner Style
 
 .main-banner .left-content {
   margin-right: 15px;
+  margin-top: -3ch;
 }
 
 .main-banner .left-content h2 {
@@ -1087,8 +1091,8 @@ Banner Style
 }
 
 .main-banner .left-content .white-button a {
-  background-color: #4b8ef1;
-  color: #fff !important;
+  background-color: #fff;
+  color: #4b8ef1 !important;
 }
 
 /* 
@@ -2137,6 +2141,7 @@ responsive
   }
   .main-banner .left-content {
     margin-right: 0px;
+    margin-top: -7ch;
   }
   .main-banner {
     text-align: center;
@@ -2408,18 +2413,19 @@ responsive
   }
 }
 .statistics-section {
-  background-image: url('../images/bg-lg-blor.jpg'); /* Replace with your image path */
+  background-image: url('../images/overlay-bg.jpg'); /* Replace with your image path */
   background-size: cover; /* Adjusts the image to cover the entire section */
   background-position: center;
   backdrop-filter: blur(15px); /* Blur effect */
-  border-radius: 20px; /* Rounded corners */
-  padding: 10px;
-  width: 85%; /* Adjust width as needed */
+  border-radius: 0; /* Rounded corners */
+  padding: 60px;
+  width: 100%; /* Adjust width as needed */
   margin: 0 auto; /* Center it on the page */
   margin-top: 3ch; /* Center it on the page */
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  background-attachment: fixed; /* Keeps the background fixed as the user scrolls */
 }
 
 .branding-banner h1 {
